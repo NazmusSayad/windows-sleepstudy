@@ -10,7 +10,7 @@ const files = fs
 
 fs.writeFileSync(
   path.join(__dirname, 'index.html'),
-  files.map((file) => `<a href="/${file}">${file}</a>`).join('<br>')
+  files.map((file) => `<a href="./${file}">${file}</a>`).join('<br>')
 )
 
 console.log(files)
